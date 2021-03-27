@@ -11,3 +11,48 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body{
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  color: black;
+  /* change this */
+  max-width: 1200px; 
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+h2, h3{
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  color: #303132;
+
+
+}
+.left_margin{
+  margin-left: 10px;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  line-height: 50px;
+  color: #303132;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+ p{
+   color: gray;
+ }
