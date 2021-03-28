@@ -1,16 +1,22 @@
 import Header from './Header';
 import Main from './Main';
-import Work from './Work';
+import Works from './Works';
 import Footer from './Footer';
+
+import { Link, BrowserRouter as Router, Route} from "react-router-dom";
 
 function App() {
   return (
-    <div>
-     <Header/>
-     <Main/>
-     <Work/>
-     <Footer/>
-    </div>
+    <Router>
+      <div>
+        <Header/>
+        <Route path="/" exact component={Main}/>
+        <Route path="/works" exact component={Works}/>
+
+        <Footer/>
+
+      </div>
+    </Router>
   );
 }
 
