@@ -6,9 +6,30 @@ body{
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   color: black;
   /* change this */
-  max-width: 1000px; 
-  margin: auto;
+  /* max-width: 1000px; 
+  margin: auto; */
   font-family: 'Roboto', sans-serif;
+  /* padding: 0 20px; */
+}
+header{
+  width:100%;
+  max-width: 900px; 
+  margin: auto;
+  padding: 40px 0;
+}
+
+.container{
+  width:100%;
+  max-width: 900px; 
+  margin: auto;
+  padding: 100px 0;
+}
+
+.work_container{
+  width:100%;
+  max-width: 900px; 
+  margin: auto;
+  /* padding: 100px 0; */
 }
 /* 
 header, footer{
@@ -16,15 +37,23 @@ header, footer{
   -webkit-transform: translate3d(0, 0, 0);
 
 } */
+
+
+.hov:hover{
+  box-shadow: 5px 5px 60px -30px darkgray;
+  /* border: 2px solid grey;*/
+  border-radius: 4px; 
+}
+
 a{
   text-decoration: none;
   color: black;
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 h2, h3{
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
   /* font-family: 'Poppins', sans-serif; */
   color: #303132;
   font-weight: 900;
@@ -34,8 +63,8 @@ h2{
 }
 
 h3{
-  font-size: 1.4rem;
-
+  font-size: 1.1rem;
+  margin: 40px 0 20px 0;
 }
 
 .left_margin{
@@ -49,6 +78,40 @@ h1{
   color: #303132;
 }
 
+input{
+  padding: 8px;
+  border-radius: 2px;
+  border: 0;
+  margin: 0 10px 10px 0;
+  font-size: 0.9rem;
+  width: 300px;
+  /* opacity: 50%; */
+  /* display: inline-block; */
+}
+input::placeholder, textarea::placeholder{
+  color: white;
+  opacity: 30%;
+}
+textarea{
+  padding: 8px;
+  width: 610px;
+  height: 150px;
+  border: 0;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  /* opacity: 50%; */
+}
+
+button{
+  width: 610px;
+  height: 50px;
+  border: none;
+  margin: 10px 0 0 0;
+  border-radius: 2px;
+  background-color: coral;
+  color: white;
+  opacity: 40%;
+}
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
  }
@@ -90,9 +153,27 @@ h1{
 	font-weight: normal;
 	font-style: normal;
 }
-body{
+body,a{
 	font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
 }
 h1{
    font-family: 'proxima_nova_rgbold', Helvetica, Arial, sans-serif;
+}
+
+.block{
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 500px;
+  }
+  h1{
+    padding: 0 15px;
+    font-size: 2.5rem;
+    line-height: 40px;
+  }
+  .block{
+    display: inline;
+  }
 }

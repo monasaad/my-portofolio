@@ -3,29 +3,15 @@ import { Link, BrowserRouter as Router, Route, useHistory} from "react-router-do
 
 function Work(probs){
     const history = useHistory();
-
     return(
-        
-    <Router>
-    <span style={{textAlign: "center"}}>
-                {/* this must change */}
-                    <Link onClick={()=> history.push("/works")}> 
-                        <img style={{padding: "10px"}} src={probs.src} width="320px"/>
-                        <h3>{probs.name}</h3>
-                    </Link>
-                </span>
-        {/* <section style={{backgroundColor: "lightgrey"}}>
-            <h2>My work</h2>
-            <div style={{display: "flex", justifyContent: "space-between"}}>
-                <span style={{textAlign: "center"}}>
-                    <Link onClick={()=> history.push("/works")}> 
-                        <img src="./images/Axenda.svg" width="350px"/>
-                        <h3>{probs.name}</h3>
-                    </Link>
-                </span>
+        <span>
+            <div class="hov" style={{margin: "5px 10px 5px 0", width:"290px", height:"260px", backgroundColor: "#f7fafc", borderRadius:"5px"}}>
+            <img style={{padding: "0" , borderRadius:"5px"}} src={probs.src} width="290px"/>
+            <h3 style={{margin:"0", textAlign:"center"}}>{probs.name}</h3>
+            <h3 style={{margin:"100px 0 0 0", textAlign:"center"}}>{probs.c}</h3>
+
             </div>
-        </section> */}
-    </Router>
+        </span>
     );
 }
 

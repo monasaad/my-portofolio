@@ -1,18 +1,26 @@
-import { Link, BrowserRouter as Router,Route, useHistory } from "react-router-dom";
+import { BrowserRouter as Router, withRouter, useHistory } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Header() {
 
     const history = useHistory();
 
     return (
-        <header style={{top:"0", position: "fixed", backgroundColor: "white", borderBottom: "2px solid black", width:"100%", padding: "40px 5px 15px 5px", maxWidth: "1000px"}}>
-            <Link onClick={()=> history.push("/")}>Mona Alotaibi</Link>
+        <div style={{borderBottom:"3px solid white", boxShadow: "0 7px 20px -20px grey", zIndex:"2", backgroundColor: "white",top:"0", position: "fixed", height: "80px", width:"100%"}}>
+        <header>
+            <Router>
+                <Link onClick={()=> history.push("/")}>Mona Alotaibi</Link>
+            </Router>
                 <span style={{float: "right"}}>
-                    <Link onClick={()=> history.push("/works")}>My work</Link>
-                    <Link class="left_margin" onClick={()=> history.push("/works")}> About me</Link>
-                    <Link class="left_margin" onClick={()=> history.push("/works")}>Contact</Link>
+                <Router>
+                    {/* <Link onClick={()=> history.push("/works")}>My work</Link> */}
+                    <Link class="left_margin" to="/#work">My work</Link>
+                    <Link class="left_margin" to="/#about">About me</Link>
+                    <Link class="left_margin" to="/#contact">Contact</Link>
+                    </Router>
                 </span>
-        </header>
+                </header>
+        </div>
     );
   }
   
