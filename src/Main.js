@@ -20,7 +20,7 @@ function Main(){
                 <div id="work" style={{marginTop: "200px"}}>
                     <h2>My work</h2>
                     
-                    <div style={{display: "flex", justifyContent: "space-between"}}>
+                    <div class="work">
                         
                         <Link onClick={()=> history.push("/DarbV1")}>
                             <Work  src="./images/drbv1.1.svg" name="Darb V1"/>
@@ -33,8 +33,6 @@ function Main(){
                         <Link onClick={()=> history.push("/Gym")}>
                             <Work  src="./images/gym1.svg" name="Gym Business"/>
                         </Link>
-                    </div>
-                    <div style={{display: "flex"}}>
                         
                         <Link onClick={()=> history.push("/Cal")}>
                             <Work  src="./images/cal1.svg" name="Academic Weekly Planner"/>

@@ -3,13 +3,11 @@ import AboutCom from "./AboutCom"
 function About(){
     return(
         // "#EFF0F0"
-        <div id= "about" style={{backgroundColor: "#f7fafc" }}>
+        <div id= "about" style={{backgroundColor: "#f7fafc", right:"0" }}>
         <div class="container">
             <h2>About me</h2>
-            <p style={{margin: "10px 0 30px 0"}}>A UI Designer and Front End Developer,  I enjoy designing and developing responsive website. I like to create minimal and
-I completed my bachloer degree on Computer Sience in May 2020, during and after my study I have taken training and completed courses
-I have taken planty of training and course which are related to my field, 
-I have done data entry, desktop application, web development and UI designing
+            <p style={{margin: "10px 0 30px 0"}}>
+            A UI Designer and Front End Developer, who enjoys designing and developing responsive websites.
 </p>
             
             <h3>education & experience </h3>
@@ -24,30 +22,30 @@ I have done data entry, desktop application, web development and UI designing
                 company="Misk Foundation"
             />
             <AboutCom
-                date="2018"
+                date="Aug. 2018"
                 para="Summer Training at"
                 company="ISCOSA"
             />
             <AboutCom
-                date="2019"
+                date="Jul. 2019"
                 para="COOP Training at"
                 company="Imam Abdulrahman Bin Faisal University"
             />
             
             <AboutCom
-                date="2020"
+                date="May 2020"
                 para="Computer Science Bachelor Degree from"
                 company="Imam Abdulrahman Bin Faisal University"
 
             />
             <AboutCom
-                date="2020"
+                date="Dec. 2020"
                 para="System Analysis Trainee at"
                 company="Imam Abdulrahman Bin Faisal University"
 
             />
             <AboutCom
-                date="2021"
+                date="Feb. 2021"
                 para="UI/UX Design Training Program at"
                 company="National Information Technology Academy"
 

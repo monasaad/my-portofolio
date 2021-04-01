@@ -15,8 +15,8 @@ function AboutCom(probs){
                     <tbody>
                         <tr>
                             <td style={{minWidth: "100px"}}><p style={{color:"#303132"}}>{probs.date}</p></td>
-                            <td><p> {probs.para}</p></td>
-                            <td><p>{probs.company}</p></td>
+                            <td><p> {probs.para} <b>{probs.company}</b></p></td>
+                            {/* <td><p>{probs.company}</p></td> */}
                         </tr>
                     </tbody>
                 </table>
